@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Mon app Spring</title>
+</head>
+<body>
+    <p><a href="/hello">Salut tout lement</a></p>
+
+    <form action="/hello" method="GET" id="nameForm">
+        <div>
+            <label for="nameField">Comment l'application doit-elle vous appeler ?</label>
+            <input name="myName" id="nameField">
+             <button>Salue-moi!</button>
+        </div>
+    </form>
+
+    <hr>
+
+    <form action="/add" method="POST">
+        <p>Ajouter un client</p>
+
+        <div>
+            <label for="firstName">Prenom :</label>
+            <input name="first" id="firstName" value="Homer">
+        </div>
+        <div>
+            <label for="lastName">Nom :</label>
+            <input name="last" id="lastName" value="Simpson">
+        </div>
+        <div>
+            <button>Ajouter Client</button>
+        </div>
+    </form>
+    <hr>
+    <form action="/list" method="GET">
+        <button>Liste des Clients</button>
+    </form>
+</body>
+</html>
